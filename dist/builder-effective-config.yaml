@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.saiyan.converter.pro
+productName: Super Saiyan Converter PRO
+copyright: Copyright © 2026 Pedro Mendez
+win:
+  target:
+    - nsis
+mac:
+  target:
+    - dmg
+files:
+  - filter:
+      - index.html
+      - index.css
+      - main.js
+      - assets/**/*
+electronVersion: 40.0.0
