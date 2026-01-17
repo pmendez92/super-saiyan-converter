@@ -1,0 +1,44 @@
+{
+  "name": "super-saiyan-converter-pro",
+  "version": "1.0.0",
+  "description": "Professional file converter with Super Saiyan aesthetics",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:all": "electron-builder --win --mac"
+  },
+  "build": {
+    "appId": "com.saiyan.converter.pro",
+    "productName": "Super Saiyan Converter PRO",
+    "copyright": "Copyright © 2026 Pedro Mendez",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "files": [
+      "index.html",
+      "index.css",
+      "main.js",
+      "assets/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "Pedro Mendez",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.4.0"
+  }
+}
